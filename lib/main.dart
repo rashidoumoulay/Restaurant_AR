@@ -5,6 +5,7 @@ import 'package:restaurant_ar/views/Menu.dart';
 import 'package:restaurant_ar/views/Profil_view.dart';
 
 import 'package:restaurant_ar/views/AjoutPlatPage.dart';
+import 'package:restaurant_ar/views/RegisterPage.dart';
 import 'views/Accueil.dart';
 void main() {
   runApp(const MyApp());
@@ -31,6 +32,7 @@ class MyApp extends StatelessWidget {
         '/menu' : (context) => const MenuPage(title: 'Menu'),
         "/ajouterPlat": (context) => const AjoutPlatPage(),
         "/aPropos" : (context) => const AProposPage(),
+        "/register" : (context) => const RegisterView(),
       },
     );
   }

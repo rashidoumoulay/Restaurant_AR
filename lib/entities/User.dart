@@ -4,6 +4,7 @@ class User {
   final String id;
   final String nom;
   final String email;
+  final String password;
   final String role;
   List<Plat> favoris ;
 
@@ -11,6 +12,7 @@ class User {
     required this.id,
     required this.nom,
     required this.email,
+    required this.password,
     required this.role,
     List<Plat>? favoris, 
   }) : favoris = favoris ?? [];
@@ -20,6 +22,7 @@ class User {
       id: json['id'],
       nom: json['nom'],
       email: json['email'],
+      password: json['password'],
       role : json['role'],
       favoris: json['favoris'],
     );
